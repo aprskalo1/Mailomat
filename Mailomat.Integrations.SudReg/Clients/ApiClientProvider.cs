@@ -12,9 +12,7 @@ public class ApiClientProvider(IConfiguration configuration)
         configuration ?? throw new ArgumentNullException(nameof(configuration));
 
     private readonly SemaphoreSlim _semaphore = new(1, 1);
-
     private static readonly JsonSerializerOptions JsonOptions = new() { PropertyNameCaseInsensitive = true };
-
     private string _cachedToken = string.Empty;
     private DateTime _expiresAtUtc = DateTime.MinValue;
 
@@ -40,7 +38,7 @@ public class ApiClientProvider(IConfiguration configuration)
 
         var client = new HttpClient
         {
-            BaseAddress = new Uri(_configuration["ApiSettings:BaseUrl"]
+            BaseAddress = new Uri(_configuration["SudRegApi:BaseUrl"]
                                   ?? throw new InvalidOperationException("Missing BaseUrl"))
         };
         client.DefaultRequestHeaders.Authorization =
@@ -51,13 +49,13 @@ public class ApiClientProvider(IConfiguration configuration)
 
     private async Task<OAuthTokenResponse> RequestNewTokenAsync()
     {
-        var clientId = _configuration["ApiSettings:ClientId"];
-        var clientSecret = _configuration["ApiSettings:ClientSecret"];
+        var clientId = _configuration["SudRegApi:ClientId"];
+        var clientSecret = _configuration["SudRegApi:ClientSecret"];
         if (string.IsNullOrWhiteSpace(clientId) || string.IsNullOrWhiteSpace(clientSecret))
             throw new InvalidOperationException("ClientId/Secret not configured.");
 
         using var http = new HttpClient();
-        http.BaseAddress = new Uri(_configuration["ApiSettings:BaseUrl"]
+        http.BaseAddress = new Uri(_configuration["SudRegApi:BaseUrl"]
                                    + "/api/oauth/token");
 
         var credentials = Encoding.UTF8.GetBytes($"{clientId}:{clientSecret}");

@@ -8,7 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6cb7614-7138-4d1d-8b1e-bc75641f97c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Models/SubjektResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Utils/NumberToStringConverter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mailomat/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mailomat/.idea/dictionaries/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mailomat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mailomat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Clients/ApiClientProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Clients/ApiClientProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Interfaces/ISubjektiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Interfaces/ISubjektiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Mailomat.Integrations.SudReg.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Mailomat.Integrations.SudReg.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Models/OAuthTokenResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Models/OAuthTokenResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Services/SubjektiService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Services/SubjektiService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Worker/Mailomat.Worker.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Worker/Mailomat.Worker.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Worker/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Worker/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Worker/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Worker/Worker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mailomat.Worker/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Mailomat.Worker/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +46,14 @@
     &quot;accountId&quot;: &quot;208353d3-a9a7-4678-bb1e-71867c6ec065&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24276f5a960c41c7b74713aa84cb1cae4672f89e225b6dcd2fe9b297a3a39/TaskAwaiter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2ec160d423aad657354dc9a131203dc51844dc105bb7d6e906949b8f3b75671/Host.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/658ad1fa108317d78bcae889b6e4f9dd5327babb6582972f2dbeabf36dafa5/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9dd63934bdf2dcaeac18ff2bf4e6198cdb804aefcebdfcc5dffc51709ea286/CallSiteFactory.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -42,26 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Mailomat.Worker.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Mailomat.Worker.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Mailomat.Worker" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Mailomat.Worker/Mailomat.Worker.csproj" />
@@ -92,7 +114,8 @@
       <workItem from="1748937493413" duration="5035000" />
       <workItem from="1748966527710" duration="65000" />
       <workItem from="1748966602462" duration="5117000" />
-      <workItem from="1748971801474" duration="461000" />
+      <workItem from="1748971801474" duration="562000" />
+      <workItem from="1749063965516" duration="7180000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -118,7 +141,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748971517532</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[MAILOMAT] - git init">
+      <option name="closed" value="true" />
+      <created>1748972288822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748972288822</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[MAILOMAT] - Project structure defined, SudReg integration in progress.">
+      <option name="closed" value="true" />
+      <created>1748972323256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748972323256</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +171,7 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="init" />
+    <MESSAGE value="[MAILOMAT] - git init" />
     <MESSAGE value="[MAILOMAT] - Project structure defined, SudReg integration in progress." />
     <option name="LAST_COMMIT_MESSAGE" value="[MAILOMAT] - Project structure defined, SudReg integration in progress." />
   </component>
@@ -150,6 +190,58 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Mailomat.Integrations.SudReg/Clients/ApiClientProvider.cs</url>
+          <line>20</line>
+          <properties documentPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Clients/ApiClientProvider.cs" containingFunctionPresentation="Method 'GetClientAsync'">
+            <startOffsets>
+              <option value="746" />
+            </startOffsets>
+            <endOffsets>
+              <option value="821" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Mailomat.Integrations.SudReg/Clients/ApiClientProvider.cs</url>
+          <line>51</line>
+          <properties documentPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Clients/ApiClientProvider.cs" containingFunctionPresentation="Method 'RequestNewTokenAsync'">
+            <startOffsets>
+              <option value="1849" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1901" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Mailomat.Integrations.SudReg/Services/SubjektiService.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/Mailomat.Integrations.SudReg/Services/SubjektiService.cs" containingFunctionPresentation="Method 'GetSubjektiAsync'">
+            <startOffsets>
+              <option value="1118" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1119" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Mailomat.Worker/Worker.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Mailomat.Worker/Worker.cs" containingFunctionPresentation="Method 'ExecuteAsync'">
+            <startOffsets>
+              <option value="757" />
+            </startOffsets>
+            <endOffsets>
+              <option value="926" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
